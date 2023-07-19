@@ -1,0 +1,1075 @@
+####PLC2IOC####
+#Gap Position&Velocity
+record(ai,"IAMW:CurrentGapPosition")
+{
+	field(DESC,"GapPosition")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.UserMode.UserGapPositionDisplay")
+	field(SCAN,"I/O Intr")
+}
+record(ai,"IAMW:CurrentGapVelocity")
+{
+	field(DESC,"GapVelocity")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.UserMode.UserGapVelocityDisplay")
+	field(SCAN,"I/O Intr")
+}
+#SingleCarrier Position&Velocity
+record(ai,"IAMW:CurrentTopPosition")
+{
+	field(DESC,"TopPositionActual")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.TopPositionActual")
+	field(SCAN,"I/O Intr")
+}
+record(ai,"IAMW:CurrentTopVelocity")
+{
+	field(DESC,"TopVelocityActual")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.TopVelocityActual")
+	field(SCAN,"I/O Intr")
+}
+record(ai,"IAMW:CurrentBottomPosition")
+{
+	field(DESC,"BottomPositionActual")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.BottomPositionActual")
+	field(SCAN,"I/O Intr")
+}
+record(ai,"IAMW:CurrentBottomVelocity")
+{
+	field(DESC,"BottomVelocityActual")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.BottomVelocityActual")
+	field(SCAN,"I/O Intr")
+}
+record(ai,"IAMW:CurrentInPosition")
+{
+	field(DESC,"InPositionActual")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.InPositionActual")
+	field(SCAN,"I/O Intr")
+}
+record(ai,"IAMW:CurrentInVelocity")
+{
+	field(DESC,"InVelocityActual")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.InVelocityActual")
+	field(SCAN,"I/O Intr")
+}
+record(ai,"IAMW:CurrentOutPosition")
+{
+	field(DESC,"OutPositionActual")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.OutPositionActual")
+	field(SCAN,"I/O Intr")
+}
+record(ai,"IAMW:CurrentOutVelocity")
+{
+	field(DESC,"OutVelocityActual")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.OutVelocityActual")
+	field(SCAN,"I/O Intr")
+}
+#8-axis Position&Velocity--Top and Bottom
+record(ai,"IAMW:Pos_EntranceTopLin")
+{
+	field(DESC,"EntranceTopPosition")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.Pos_LeftTopLin")
+	field(SCAN,"I/O Intr")
+}
+record(ai,"IAMW:Velo_EntranceTopLin")
+{
+	field(DESC,"EntranceTopVelocity")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.Velo_LeftTopLin")
+	field(SCAN,"I/O Intr")
+}
+record(ai,"IAMW:Pos_ExitTopLin")
+{
+	field(DESC,"ExitTopPosition")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.Pos_RightTopLin")
+	field(SCAN,"I/O Intr")
+}
+record(ai,"IAMW:Velo_ExitTopLin")
+{
+	field(DESC,"ExitTopVelocity")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.Velo_RightTopLin")
+	field(SCAN,"I/O Intr")
+}
+record(ai,"IAMW:Pos_EntranceBottomLin")
+{
+	field(DESC,"EntranceBottomPosition")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.Pos_LeftBottomLin")
+	field(SCAN,"I/O Intr")
+}
+record(ai,"IAMW:Velo_EntranceBottomLin")
+{
+	field(DESC,"EntranceBottomVelocity")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.Velo_LeftBottomLin")
+	field(SCAN,"I/O Intr")
+}
+record(ai,"IAMW:Pos_ExitBottomLin")
+{
+	field(DESC,"ExitBottomPosition")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.Pos_RightBottomLin")
+	field(SCAN,"I/O Intr")
+}
+record(ai,"IAMW:Velo_ExitBottomLin")
+{
+	field(DESC,"ExitBottomVelocity")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.Velo_RightBottomLin")
+	field(SCAN,"I/O Intr")
+}
+#8-axis Position&Velocity--In and Out
+record(ai,"IAMW:Pos_EntranceInLin")
+{
+	field(DESC,"EntranceInPosition")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.Pos_LeftInLin")
+	field(SCAN,"I/O Intr")
+}
+record(ai,"IAMW:Velo_EntranceInLin")
+{
+	field(DESC,"EntranceInVelocity")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.Velo_LeftInLin")
+	field(SCAN,"I/O Intr")
+}
+record(ai,"IAMW:Pos_ExitInLin")
+{
+	field(DESC,"ExitInPosition")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.Pos_RightInLin")
+	field(SCAN,"I/O Intr")
+}
+record(ai,"IAMW:Velo_ExitInLin")
+{
+	field(DESC,"ExitInVelocity")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.Velo_RightInLin")
+	field(SCAN,"I/O Intr")
+}
+record(ai,"IAMW:Pos_EntranceOutLin")
+{
+	field(DESC,"EntranceOutPosition")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.Pos_LeftOutLin")
+	field(SCAN,"I/O Intr")
+}
+record(ai,"IAMW:Velo_EntranceOutLin")
+{
+	field(DESC,"EntranceOutVelocity")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.Velo_LeftOutLin")
+	field(SCAN,"I/O Intr")
+}
+record(ai,"IAMW:Pos_ExitOutLin")
+{
+	field(DESC,"ExitOutPosition")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.Pos_RightOutLin")
+	field(SCAN,"I/O Intr")
+}
+record(ai,"IAMW:Velo_ExitOutLin")
+{
+	field(DESC,"ExitOutVelocity")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.Velo_RightOutLin")
+	field(SCAN,"I/O Intr")
+}
+
+# LimitSwicth --Top and Bottom
+record(bi,"IAMW:LS_EntranceTop_Far")
+{
+	field(DESC,"LimitSwitch_EntranceTopFarGap")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.LS_LeftTop_Far")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:LS_EntranceTop_Near")
+{
+	field(DESC,"LimitSwitch_EntranceTopNearGap")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.LS_LeftTop_Near")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:LS_ExitTop_Far")
+{
+	field(DESC,"LimitSwitch_ExitTopFarGap")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.LS_RightTop_Far")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:LS_ExitTop_Near")
+{
+	field(DESC,"LimitSwitch_ExitTopNearGap")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.LS_RightTop_Near")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:LS_EntranceBottom_Far")
+{
+	field(DESC,"LimitSwitch_EntranceBottomFarGap")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.LS_LeftBottom_Far")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:LS_EntranceBottom_Near")
+{
+	field(DESC,"LimitSwitch_EntranceBottomNearGap")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.LS_LeftBottom_Near")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:LS_ExitBottom_Far")
+{
+	field(DESC,"LimitSwitch_ExitBottomFarGap")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.LS_RightBottom_Far")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:LS_ExitBottom_Near")
+{
+	field(DESC,"LimitSwitch_ExitBottomNearGap")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.LS_RightBottom_Near")
+	field(SCAN,"I/O Intr")
+}
+# LimitSwicth --In and Out
+record(bi,"IAMW:LS_EntranceIn_Far")
+{
+	field(DESC,"LimitSwitch_EntranceInFarGap")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.LS_LeftIn_Far")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:LS_EntranceIn_Near")
+{
+	field(DESC,"LimitSwitch_EntranceTopNearGap")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.LS_LeftTop_Near")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:LS_ExitIn_Far")
+{
+	field(DESC,"LimitSwitch_ExitTopFarGap")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.LS_RightTop_Far")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:LS_ExitIn_Near")
+{
+	field(DESC,"LimitSwitch_ExitTopNearGap")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.LS_RightTop_Near")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:LS_EntranceOut_Far")
+{
+	field(DESC,"LimitSwitch_EntranceBottomFarGap")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.LS_LeftBottom_Far")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:LS_EntranceOut_Near")
+{
+	field(DESC,"LimitSwitch_EntranceBottomNearGap")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.LS_LeftBottom_Near")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:LS_ExitOut_Far")
+{
+	field(DESC,"LimitSwitch_ExitBottomFarGap")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.LS_RightBottom_Far")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:LS_ExitOut_Near")
+{
+	field(DESC,"LimitSwitch_ExitBottomNearGap")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.LS_RightBottom_Near")
+	field(SCAN,"I/O Intr")
+}
+#####Status#####
+record(bi,"IAMW:st_Power")
+{
+	field(DESC,"st_Power")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.st_Power")
+	field(SCAN,"I/O Intr")
+}
+record(stringin,"IAMW:InsertionDeviceName")
+{
+	field(DESC,"InsertionDeviceName")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.MAIN.InsertionDeviceName")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:IDControlReady")
+{
+	field(DESC,"IDControlReady")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.IDControlReady")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:Hardware_EmergencyStop")
+{
+	field(DESC,"Hardware_EmergencyStop")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.Hardware_EmergencyStop")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:Error")
+{
+	field(DESC,"Error")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.Error")
+	field(SCAN,"I/O Intr")
+}
+record(ai,"IAMW:ErrorID")
+{
+	field(DESC,"ErrorID")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.ErrorID")
+	field(SCAN,"I/O Intr")
+}
+record(stringin,"IAMW:ErrorDescription")
+{
+	field(DESC,"ErrorDescription")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.ErrorDescription")
+	field(SCAN,"I/O Intr")
+}
+
+record(ai,"IAMW:UserTaperPositionDisplay")
+{
+	field(DESC,"UserTaperPositionDisplay")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.UserMode.UserTaperPositionDisplay")
+	field(SCAN,"I/O Intr")
+}
+record(ai,"IAMW:UserTaperVelocityDisplay")
+{
+	field(DESC,"UserTaperVelocityDisplay")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.UserMode.UserTaperVelocityDisplay")
+	field(SCAN,"I/O Intr")
+}
+##kill switch--Top and Bottom
+record(bi,"IAMW:KS_EntranceTop_Far_Contact2")
+{
+	field(DESC,"KS_LeftTop_Far_Contact2")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.KS_LeftTop_Far_Contact2")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:KS_EntranceTop_Far_Contact1")
+{
+	field(DESC,"KS_LeftTop_Far_Contact1")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.KS_LeftTop_Far_Contact1")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:KS_EntranceTop_Near_Contact1")
+{
+	field(DESC,"KS_LeftTop_Near_Contact1")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.KS_LeftTop_Near_Contact1")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:KS_EntranceTop_Near_Contact2")
+{
+	field(DESC,"KS_LeftTop_Near_Contact2")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.KS_LeftTop_Near_Contact2")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:KS_EntranceBottom_Near_Contact2")
+{
+	field(DESC,"KS_LeftBottom_Near_Contact2")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.KS_LeftBottom_Near_Contact2")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:KS_EntranceBottom_Near_Contact1")
+{
+	field(DESC,"KS_LeftBottom_Near_Contact1")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.KS_LeftBottom_Near_Contact1")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:KS_EntranceBottom_Far_Contact1")
+{
+	field(DESC,"KS_LeftBottom_Far_Contact1")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.KS_LeftBottom_Far_Contact1")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:KS_EntranceBottom_Far_Contact2")
+{
+	field(DESC,"KS_LeftBottom_Far_Contact2")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.KS_LeftBottom_Far_Contact2")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:KS_ExitTop_Far_Contact2")
+{
+	field(DESC,"KS_RightTop_Far_Contact2")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.KS_RightTop_Far_Contact2")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:KS_ExitTop_Far_Contact1")
+{
+	field(DESC,"KS_RightTop_Far_Contact1")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.KS_RightTop_Far_Contact1")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:KS_ExitTop_Near_Contact1")
+{
+	field(DESC,"KS_RightTop_Near_Contact1")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.KS_RightTop_Near_Contact1")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:KS_ExitTop_Near_Contact2")
+{
+	field(DESC,"KS_RightTop_Near_Contact2")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.KS_RightTop_Near_Contact2")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:KS_ExitBottom_Near_Contact2")
+{
+	field(DESC,"KS_RightBottom_Near_Contact2")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.KS_RightBottom_Near_Contact2")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:KS_ExitBottom_Near_Contact1")
+{
+	field(DESC,"KS_RightBottom_Near_Contact1")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.KS_RightBottom_Near_Contact1")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:KS_ExitBottom_Far_Contact2")
+{
+	field(DESC,"KS_RightBottom_Far_Contact2")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.KS_RightBottom_Far_Contact2")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:KS_ExitBottom_Far_Contact1")
+{
+	field(DESC,"KS_RightBottom_Far_Contact1")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.KS_RightBottom_Far_Contact1")
+	field(SCAN,"I/O Intr")
+}
+##kill switch--In and Out
+record(bi,"IAMW:KS_EntranceIn_Far_Contact2")
+{
+	field(DESC,"KS_LeftIn_Far_Contact2")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.KS_LeftIn_Far_Contact2")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:KS_EntranceIn_Far_Contact1")
+{
+	field(DESC,"KS_LeftIn_Far_Contact1")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.KS_LeftIn_Far_Contact1")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:KS_EntranceIn_Near_Contact1")
+{
+	field(DESC,"KS_LeftIn_Near_Contact1")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.KS_LeftIn_Near_Contact1")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:KS_EntranceIn_Near_Contact2")
+{
+	field(DESC,"KS_LeftIn_Near_Contact2")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.KS_LeftIn_Near_Contact2")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:KS_EntranceOut_Near_Contact2")
+{
+	field(DESC,"KS_LeftOut_Near_Contact2")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.KS_LeftOut_Near_Contact2")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:KS_EntranceOut_Near_Contact1")
+{
+	field(DESC,"KS_LeftOut_Near_Contact1")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.KS_LeftOut_Near_Contact1")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:KS_EntranceOut_Far_Contact1")
+{
+	field(DESC,"KS_LeftOut_Far_Contact1")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.KS_LeftOut_Far_Contact1")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:KS_EntranceOut_Far_Contact2")
+{
+	field(DESC,"KS_LeftOut_Far_Contact2")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.KS_LeftOut_Far_Contact2")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:KS_ExitIn_Far_Contact2")
+{
+	field(DESC,"KS_RightIn_Far_Contact2")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.KS_RightIn_Far_Contact2")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:KS_ExitIn_Far_Contact1")
+{
+	field(DESC,"KS_RightIn_Far_Contact1")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.KS_RightIn_Far_Contact1")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:KS_ExitIn_Near_Contact1")
+{
+	field(DESC,"KS_RightIn_Near_Contact1")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.KS_RightIn_Near_Contact1")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:KS_ExitIn_Near_Contact2")
+{
+	field(DESC,"KS_RightIn_Near_Contact2")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.KS_RightIn_Near_Contact2")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:KS_ExitOut_Near_Contact2")
+{
+	field(DESC,"KS_RightOut_Near_Contact2")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.KS_RightOut_Near_Contact2")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:KS_ExitOut_Near_Contact1")
+{
+	field(DESC,"KS_RightOut_Near_Contact1")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.KS_RightOut_Near_Contact1")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:KS_ExitOut_Far_Contact2")
+{
+	field(DESC,"KS_RightOut_Far_Contact2")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.KS_RightOut_Far_Contact2")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:KS_ExitOut_Far_Contact1")
+{
+	field(DESC,"KS_RightOut_Far_Contact1")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.KS_RightOut_Far_Contact1")
+	field(SCAN,"I/O Intr")
+}
+###Hardware kill 
+record(bi,"IAMW:KS_CabinetEmergency_contact1")
+{
+	field(DESC,"KS_CabinetEmergency_contact1")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.KS_CabinetEmergency_contact1")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:KS_handEmergency1_Contact1")
+{
+	field(DESC,"KS_handEmergency1_Contact1")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.KS_handEmergency1_Contact1")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:KS_handEmergency2_Contact1")
+{
+	field(DESC,"KS_handEmergency2_Contact1")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.Global_Variables.KS_handEmergency2_Contact1")
+	field(SCAN,"I/O Intr")
+}
+###safe PLC
+record(bi,"IAMW:FB_ERROR")
+{
+	field(DESC,"FB_ERROR")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.MAIN.FB_ERROR")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:COM_ERROR")
+{
+	field(DESC,"COM_ERROR")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.MAIN.COM_ERROR")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:SafePLCRunOK")
+{
+	field(DESC,"SafePLCRunOK")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.MAIN.SafePLCRunOK")
+	field(SCAN,"I/O Intr")
+}
+##DriveDiag--Top and Bottom
+record(ai,"IAMW:DriveDiagNumber_EntranceTop")
+{
+	field(DESC,"DriveDiagNumber_LeftTop")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.MAIN.DriveDiagNumber_LeftTop")
+	field(SCAN,"I/O Intr")
+}
+record(ai,"IAMW:DriveDiagNumber_ExitTop")
+{
+	field(DESC,"DriveDiagNumber_RightTop")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.MAIN.DriveDiagNumber_RightTop")
+	field(SCAN,"I/O Intr")
+}
+record(ai,"IAMW:DriveDiagNumber_EntranceBottom")
+{
+	field(DESC,"DriveDiagNumber_LeftBottom")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.MAIN.DriveDiagNumber_LeftBottom")
+	field(SCAN,"I/O Intr")
+}
+record(ai,"IAMW:DriveDiagNumber_ExitBottom")
+{
+	field(DESC,"DriveDiagNumber_RightBottom")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.MAIN.DriveDiagNumber_RightBottom")
+	field(SCAN,"I/O Intr")
+}
+record(stringin,"IAMW:DriveDiagMessage_EntranceTop")
+{
+	field(DESC,"DriveDiagMessage_LeftTop")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.MAIN.DriveDiagMessage_LeftTop")
+	field(SCAN,"I/O Intr")
+}
+record(stringin,"IAMW:DriveDiagMessage_ExitTop")
+{
+	field(DESC,"DriveDiagMessage_RightTop")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.MAIN.DriveDiagMessage_RightTop")
+	field(SCAN,"I/O Intr")
+}
+record(stringin,"IAMW:DriveDiagMessage_EntranceBottom")
+{
+	field(DESC,"DriveDiagMessage_LeftBottom")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.MAIN.DriveDiagMessage_LeftBottom")
+	field(SCAN,"I/O Intr")
+}
+record(stringin,"IAMW:DriveDiagMessage_ExitBottom")
+{
+	field(DESC,"DriveDiagMessage_RightBottom")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.MAIN.DriveDiagMessage_RightBottom")
+	field(SCAN,"I/O Intr")
+}
+##DriveDiag--In and Out
+record(ai,"IAMW:DriveDiagNumber_EntranceIn")
+{
+	field(DESC,"DriveDiagNumber_LeftIn")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.MAIN.DriveDiagNumber_LeftIn")
+	field(SCAN,"I/O Intr")
+}
+record(ai,"IAMW:DriveDiagNumber_ExitIn")
+{
+	field(DESC,"DriveDiagNumber_RightIn")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.MAIN.DriveDiagNumber_RightIn")
+	field(SCAN,"I/O Intr")
+}
+record(ai,"IAMW:DriveDiagNumber_EntranceOut")
+{
+	field(DESC,"DriveDiagNumber_LeftOut")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.MAIN.DriveDiagNumber_LeftOut")
+	field(SCAN,"I/O Intr")
+}
+record(ai,"IAMW:DriveDiagNumber_ExitOut")
+{
+	field(DESC,"DriveDiagNumber_RightOut")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.MAIN.DriveDiagNumber_RightOut")
+	field(SCAN,"I/O Intr")
+}
+record(stringin,"IAMW:DriveDiagMessage_EntranceIn")
+{
+	field(DESC,"DriveDiagMessage_LeftIn")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.MAIN.DriveDiagMessage_LeftIn")
+	field(SCAN,"I/O Intr")
+}
+record(stringin,"IAMW:DriveDiagMessage_ExitIn")
+{
+	field(DESC,"DriveDiagMessage_RightIn")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.MAIN.DriveDiagMessage_RightIn")
+	field(SCAN,"I/O Intr")
+}
+record(stringin,"IAMW:DriveDiagMessage_EntranceOut")
+{
+	field(DESC,"DriveDiagMessage_LeftOut")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.MAIN.DriveDiagMessage_LeftOut")
+	field(SCAN,"I/O Intr")
+}
+record(stringin,"IAMW:DriveDiagMessage_ExitOut")
+{
+	field(DESC,"DriveDiagMessage_RightOut")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.MAIN.DriveDiagMessage_RightOut")
+	field(SCAN,"I/O Intr")
+}
+
+
+###################################################
+#############################IOC2PLC###########################################################################
+#pbSingleCarrierMode
+record(bo,"IAMW:pbSingleCarrierMode")
+{
+	field(DESC,"pbSingleCarrierMode")
+	field(DTYP,"opc")
+	field(OUT,"1 Plc1.MAIN.pbSingleCarrierMode")
+	field(SCAN,"I/O Intr")
+}
+#pbUserMode
+record(bo,"IAMW:pbUserMode")
+{
+	field(DESC,"pbUserMode")
+	field(DTYP,"opc")
+	field(OUT,"1 Plc1.MAIN.pbUserMode")
+	field(SCAN,"I/O Intr")
+}
+#Power
+record(bo,"IAMW:Power")
+{
+	field(DESC,"Power on or off")
+	field(DTYP,"opc")
+	field(OUT,"1 Plc1.Global_Variables.btn_Power")
+	field(SCAN,"I/O Intr")
+}
+#Gap Move&Stop
+record(bo,"IAMW:GapMove")
+{
+	field(DESC,"gap move")
+	field(DTYP,"opc")
+	field(OUT,"1 Plc1.UserMode.btn_UserGapMove")
+	field(SCAN,"I/O Intr")
+}
+record(bo,"IAMW:GapStop")
+{
+	field(DESC,"gap stop")
+	field(DTYP,"opc")
+	field(OUT,"1 Plc1.UserMode.btn_UserGapStop")
+	field(SCAN,"I/O Intr")
+}
+#SingleCarrier Move&Stop
+record(bo,"IAMW:TopMove")
+{
+	field(DESC,"Top move")
+	field(DTYP,"opc")
+	field(OUT,"1 Plc1.SingleCarrierMode.btn_TopMove")
+	field(SCAN,"I/O Intr")
+}
+record(bo,"IAMW:TopStop")
+{
+	field(DESC,"gap stop")
+	field(DTYP,"opc")
+	field(OUT,"1 Plc1.SingleCarrierMode.btn_TopStop")
+	field(SCAN,"I/O Intr")
+}
+record(bo,"IAMW:BottomMove")
+{
+	field(DESC,"Bottom move")
+	field(DTYP,"opc")
+	field(OUT,"1 Plc1.SingleCarrierMode.btn_BottomMove")
+	field(SCAN,"I/O Intr")
+}
+record(bo,"IAMW:BottomStop")
+{
+	field(DESC,"Bottom stop")
+	field(DTYP,"opc")
+	field(OUT,"1 Plc1.SingleCarrierMode.btn_BottomStop")
+	field(SCAN,"I/O Intr")
+}
+record(bo,"IAMW:InMove")
+{
+	field(DESC,"In move")
+	field(DTYP,"opc")
+	field(OUT,"1 Plc1.SingleCarrierMode.btn_InMove")
+	field(SCAN,"I/O Intr")
+}
+record(bo,"IAMW:InStop")
+{
+	field(DESC,"In stop")
+	field(DTYP,"opc")
+	field(OUT,"1 Plc1.SingleCarrierMode.btn_InStop")
+	field(SCAN,"I/O Intr")
+}
+record(bo,"IAMW:OutMove")
+{
+	field(DESC,"Out move")
+	field(DTYP,"opc")
+	field(OUT,"1 Plc1.SingleCarrierMode.btn_OutMove")
+	field(SCAN,"I/O Intr")
+}
+record(bo,"IAMW:OutStop")
+{
+	field(DESC,"Out stop")
+	field(DTYP,"opc")
+	field(OUT,"1 Plc1.SingleCarrierMode.btn_OutStop")
+	field(SCAN,"I/O Intr")
+}
+
+# Gap target position&velocity
+record(ao,"IAMW:TargetGapPosition")
+{
+	field(DESC,"GapTargetPosition")
+	field(DTYP,"opc")
+	field(OUT,"1 Plc1.UserMode.UserGapPositionNew")
+	field(SCAN,"I/O Intr")
+}
+record(ao,"IAMW:TargetGapVelocity")
+{
+	field(DESC,"GapTargetVelocity")
+	field(DTYP,"opc")
+	field(OUT,"1 Plc1.UserMode.UserGapVelocityNew")
+	field(SCAN,"I/O Intr")
+}
+# SingleCarrier target position&velocity
+record(ao,"IAMW:TargetTopPosition")
+{
+	field(DESC,"TargetTopPosition")
+	field(DTYP,"opc")
+	field(OUT,"1 Plc1.SingleCarrierMode.TopPositionNew")
+	field(SCAN,"I/O Intr")
+}
+record(ao,"IAMW:TargetTopVelocity")
+{
+	field(DESC,"TargetTopVelocity")
+	field(DTYP,"opc")
+	field(OUT,"1 Plc1.SingleCarrierMode.TopVelocityNew")
+	field(SCAN,"I/O Intr")
+}
+record(ao,"IAMW:TargetBottomPosition")
+{
+	field(DESC,"TargetBottomPosition")
+	field(DTYP,"opc")
+	field(OUT,"1 Plc1.SingleCarrierMode.BottomPositionNew")
+	field(SCAN,"I/O Intr")
+}
+record(ao,"IAMW:TargetBottomVelocity")
+{
+	field(DESC,"TargetBottomVelocity")
+	field(DTYP,"opc")
+	field(OUT,"1 Plc1.SingleCarrierMode.BottomVelocityNew")
+	field(SCAN,"I/O Intr")
+}
+record(ao,"IAMW:TargetInPosition")
+{
+	field(DESC,"TargetInPosition")
+	field(DTYP,"opc")
+	field(OUT,"1 Plc1.SingleCarrierMode.InPositionNew")
+	field(SCAN,"I/O Intr")
+}
+record(ao,"IAMW:TargetInVelocity")
+{
+	field(DESC,"TargetInVelocity")
+	field(DTYP,"opc")
+	field(OUT,"1 Plc1.SingleCarrierMode.InVelocityNew")
+	field(SCAN,"I/O Intr")
+}
+record(ao,"IAMW:TargetOutPosition")
+{
+	field(DESC,"TargetOutPosition")
+	field(DTYP,"opc")
+	field(OUT,"1 Plc1.SingleCarrierMode.OutPositionNew")
+	field(SCAN,"I/O Intr")
+}
+record(ao,"IAMW:TargetOutVelocity")
+{
+	field(DESC,"TargetOutVelocity")
+	field(DTYP,"opc")
+	field(OUT,"1 Plc1.SingleCarrierMode.OutVelocityNew")
+	field(SCAN,"I/O Intr")
+}
+# taper target position&velocity
+record(ao,"IAMW:TargetTaperPosition")
+{
+	field(DESC,"TaperTargetPosition")
+	field(DTYP,"opc")
+	field(OUT,"1 Plc1.UserMode.UserTaperPositionNew")
+	field(SCAN,"I/O Intr")
+}
+record(ao,"IAMW:TargetTaperVelocity")
+{
+	field(DESC,"TaperTargetVelocity")
+	field(DTYP,"opc")
+	field(OUT,"1 Plc1.UserMode.UserTaperVelocityNew")
+	field(SCAN,"I/O Intr")
+}
+record(bo,"IAMW:TaperOrNot")
+{
+	field(DESC,"TaperOrNot")
+	field(DTYP,"opc")
+	field(OUT,"1 Plc1.Global_Variables.TaperOrNot")
+	field(SCAN,"I/O Intr")
+}
+#restart TwinCAT
+record(bo,"IAMW:RestartTwinCAT")
+{
+	field(DESC,"RestartTwinCAT")
+	field(DTYP,"opc")
+	field(OUT,"1 Plc1.Global_Variables.m_restartTC")
+	field(SCAN,"I/O Intr")
+}
+#emergency
+record(bo,"IAMW:Plc_EmergencyStop")
+{
+	field(DESC,"Plc_EmergencyStop")
+	field(DTYP,"opc")
+	field(OUT,"1 Plc1.Global_Variables.Plc_EmergencyStop")
+	field(SCAN,"I/O Intr")
+}
+#Gloabal_ChainProtection
+record(bo,"IAMW:Global_ChainProtection_BeamLineReady")
+{
+	field(DESC,"Global_ChainProtection_BeamLineReady")
+	field(DTYP,"opc")
+	field(OUT,"1 Plc1.MAIN.Global_ChainProtection_BeamLineReady")
+	field(SCAN,"I/O Intr")
+}
+record(bo,"IAMW:Global_ChainProtection_StorageRingReady")
+{
+	field(DESC,"Global_ChainProtection_StorageRingReady")
+	field(DTYP,"opc")
+	field(OUT,"1 Plc1.MAIN.Global_ChainProtection_StorageRingReady")
+	field(SCAN,"I/O Intr")
+}
+record(bo,"IAMW:Global_ChainProtection_ManualOperation")
+{
+	field(DESC,"Global_ChainProtection_ManualOperation")
+	field(DTYP,"opc")
+	field(OUT,"1 Plc1.MAIN.Global_ChainProtection_ManualOperation")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:Global_ChainProtection_In1")
+{
+	field(DESC,"Global_ChainProtection_In1")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.MAIN.Global_ChainProtection_In1")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:Global_ChainProtection_In2")
+{
+	field(DESC,"Global_ChainProtection_In2")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.MAIN.Global_ChainProtection_In2")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:Global_ChainProtection_In3")
+{
+	field(DESC,"Global_ChainProtection_In3")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.MAIN.Global_ChainProtection_In3")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:Global_ChainProtection_In4")
+{
+	field(DESC,"Global_ChainProtection_In4")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.MAIN.Global_ChainProtection_In4")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:Global_ChainProtection_Triggered")
+{
+	field(DESC,"Global_ChainProtection_Triggered")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.MAIN.Global_ChainProtection_Triggered")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:Global_ChainProtection_Out1")
+{
+	field(DESC,"Global_ChainProtection_Out1")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.MAIN.Global_ChainProtection_Out1")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:Global_ChainProtection_Out2")
+{
+	field(DESC,"Global_ChainProtection_Out2")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.MAIN.Global_ChainProtection_Out2")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:Global_ChainProtection_Out3")
+{
+	field(DESC,"Global_ChainProtection_Out3")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.MAIN.Global_ChainProtection_Out3")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:Global_ChainProtection_Out4")
+{
+	field(DESC,"Global_ChainProtection_Out4")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.MAIN.Global_ChainProtection_Out4")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:Global_ChainProtection_Done")
+{
+	field(DESC,"Global_ChainProtection_Done")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.MAIN.Global_ChainProtection_Done")
+	field(SCAN,"I/O Intr")
+}
+record(bi,"IAMW:Global_ChainProtection_Error")
+{
+	field(DESC,"Global_ChainProtection_Error")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.MAIN.Global_ChainProtection_Error")
+	field(SCAN,"I/O Intr")
+}
+record(ai,"IAMW:Global_ChainProtection_ErrorID")
+{
+	field(DESC,"Global_ChainProtection_ErrorID")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.MAIN.Global_ChainProtection_ErrorID")
+	field(SCAN,"I/O Intr")
+}
+record(stringin,"IAMW:Global_ChainProtection_ErrorDescription")
+{
+	field(DESC,"Global_ChainProtection_ErrorDescription")
+	field(DTYP,"opc")
+	field(INP,"1 Plc1.MAIN.Global_ChainProtection_ErrorDescription")
+	field(SCAN,"I/O Intr")
+}
