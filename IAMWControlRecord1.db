@@ -253,51 +253,51 @@ record(bi,"IAMW:LS_EntranceIn_Far")
 }
 record(bi,"IAMW:LS_EntranceIn_Near")
 {
-	field(DESC,"LimitSwitch_EntranceTopNearGap")
+	field(DESC,"LimitSwitch_EntranceInNearGap")
 	field(DTYP,"opc")
-	field(INP,"1 Plc1.Global_Variables.LS_LeftTop_Near")
+	field(INP,"1 Plc1.Global_Variables.LS_LeftIn_Near")
 	field(SCAN,"I/O Intr")
 }
 record(bi,"IAMW:LS_ExitIn_Far")
 {
-	field(DESC,"LimitSwitch_ExitTopFarGap")
+	field(DESC,"LimitSwitch_ExitInFarGap")
 	field(DTYP,"opc")
-	field(INP,"1 Plc1.Global_Variables.LS_RightTop_Far")
+	field(INP,"1 Plc1.Global_Variables.LS_RightIn_Far")
 	field(SCAN,"I/O Intr")
 }
 record(bi,"IAMW:LS_ExitIn_Near")
 {
-	field(DESC,"LimitSwitch_ExitTopNearGap")
+	field(DESC,"LimitSwitch_ExitInNearGap")
 	field(DTYP,"opc")
-	field(INP,"1 Plc1.Global_Variables.LS_RightTop_Near")
+	field(INP,"1 Plc1.Global_Variables.LS_RightIn_Near")
 	field(SCAN,"I/O Intr")
 }
 record(bi,"IAMW:LS_EntranceOut_Far")
 {
-	field(DESC,"LimitSwitch_EntranceBottomFarGap")
+	field(DESC,"LimitSwitch_EntranceOutFarGap")
 	field(DTYP,"opc")
-	field(INP,"1 Plc1.Global_Variables.LS_LeftBottom_Far")
+	field(INP,"1 Plc1.Global_Variables.LS_LeftOut_Far")
 	field(SCAN,"I/O Intr")
 }
 record(bi,"IAMW:LS_EntranceOut_Near")
 {
-	field(DESC,"LimitSwitch_EntranceBottomNearGap")
+	field(DESC,"LimitSwitch_EntranceOutNearGap")
 	field(DTYP,"opc")
-	field(INP,"1 Plc1.Global_Variables.LS_LeftBottom_Near")
+	field(INP,"1 Plc1.Global_Variables.LS_LeftOut_Near")
 	field(SCAN,"I/O Intr")
 }
 record(bi,"IAMW:LS_ExitOut_Far")
 {
-	field(DESC,"LimitSwitch_ExitBottomFarGap")
+	field(DESC,"LimitSwitch_ExitOutFarGap")
 	field(DTYP,"opc")
-	field(INP,"1 Plc1.Global_Variables.LS_RightBottom_Far")
+	field(INP,"1 Plc1.Global_Variables.LS_RightOut_Far")
 	field(SCAN,"I/O Intr")
 }
 record(bi,"IAMW:LS_ExitOut_Near")
 {
-	field(DESC,"LimitSwitch_ExitBottomNearGap")
+	field(DESC,"LimitSwitch_ExitOutNearGap")
 	field(DTYP,"opc")
-	field(INP,"1 Plc1.Global_Variables.LS_RightBottom_Near")
+	field(INP,"1 Plc1.Global_Variables.LS_RightOut_Near")
 	field(SCAN,"I/O Intr")
 }
 #####Status#####
